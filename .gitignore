@@ -1,0 +1,17 @@
+.hutch/
+node_modules/
+build/
+dist/
+artifacts/
+*.tsbuildinfo
+# Secrets + local data (price data lives outside git — import via the app)
+.env
+.env.local
+ticklab-data/
+# Raw HistData.com CSVs (import anytime from the Candlestick data page)
+price_data/
+# Generated / local-only
+.cottontail-tmp/
+.next/
+ticklab/web/out/
+.DS_Store

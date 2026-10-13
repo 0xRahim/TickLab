@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --surface: #f7f7f8;
+  --surface-contrast: #131722;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --focus: #2962ff;
+  --up: #089981;
+  --down: #f6465d;
+  --accent: #2962ff;
+  --warn: #b45309;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+  --surface: #131722;
+  --surface-contrast: #f7f7f8;
+  --muted: #9ca3af;
+  --border: #2a2e39;
+  --focus: #6486ff;
+  --up: #26a69a;
+  --down: #ef5350;
+  --accent: #6486ff;
+  --warn: #f59e0b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-up: var(--up);
+  --color-down: var(--down);
+  --color-accent: var(--accent);
+  --color-warn: var(--warn);
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
